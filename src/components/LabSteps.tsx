@@ -3,7 +3,7 @@ const BASE = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/p
 const steps = [
   {
     label: "Step 1 — Baseline",
-    img: BASE + "Stark_Naked_Image_APP_IN_HAND.jpg",
+    img: "/Stark_Naked_Image_APP_IN_HAND.jpg",
     alt: "Lino-cut climber illustration",
     body: "We measure your breathing waveform using clinical-grade capnometry. You see your CO2 levels in real time. Most people are surprised by what they find.",
     imgClass: "",
@@ -17,7 +17,7 @@ const steps = [
   },
   {
     label: "Step 3 — Recovery",
-    img: BASE + "Stark_Naked_Image_PRAYER.jpg",
+    img: "/Stark_Naked_Image_PRAYER.jpg",
     alt: "Lino-cut surfer illustration",
     body: "We guide you back. You feel the shift. You understand — for the first time — what regulation actually means in your body.",
     imgClass: "object-bottom",
