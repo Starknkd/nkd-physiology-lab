@@ -8,7 +8,7 @@ const steps = [
     img: "/Stark_Naked_Image_APP_IN_HAND.jpg",
     alt: "Person holding the NKD app",
     body: "We measure your breathing waveform using clinical-grade capnometry. You see your CO2 levels in real time. Most people are surprised by what they find.",
-    imgStyle: { objectPosition: 'center center' } as React.CSSProperties,
+    imgStyle: { objectPosition: '75% center' } as React.CSSProperties,
   },
   {
     label: "Step 2 — Pressure",
