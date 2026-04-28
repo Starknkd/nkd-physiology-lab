@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="texture-bg relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
       style={{ backgroundColor: '#130730' }}
       aria-label="Hero"
     >
@@ -55,6 +55,12 @@ const Hero = () => {
           style={{ background: 'linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.6) 40%, rgba(19,7,48,0) 100%)' }}
         />
       </div>
+
+      {/* Bottom fade: smooth transition into next section */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, rgba(19,7,48,0) 60%, rgba(19,7,48,0.6) 80%, rgba(19,7,48,1) 100%)' }}
+      />
     </section>
   );
 };
