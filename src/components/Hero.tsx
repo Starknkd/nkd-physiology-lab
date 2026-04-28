@@ -10,8 +10,8 @@ const Hero = () => {
       aria-label="Hero"
     >
       {/* Wing mark top-left */}
-      <div className="absolute top-5 left-5 md:top-8 md:left-10 z-10">
-        <img src="/Final V2 WHT.png" alt="STARKNKD" className="h-10 md:h-12 w-auto object-contain" />
+      <div className="absolute top-5 left-5 md:top-8 md:left-10 z-10 pt-4 md:pt-6">
+        <img src="/Final V2 WHT.png" alt="STARKNKD" className="h-[40px] md:h-[48px] w-auto object-contain" />
       </div>
 
       {/* Left column: text content */}
