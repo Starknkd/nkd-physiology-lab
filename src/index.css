@@ -2,104 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* STARKNKD design system. HSL only. */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand */
+    --ink: 257 67% 11%;          /* #130730 */
+    --eclipse: 0 0% 100%;        /* #ffffff */
+    --sunset: 3 75% 64%;         /* #e9635e */
+    --lavender: 264 35% 34%;     /* #4f3775 */
+    --periwinkle: 268 47% 71%;   /* #b393da */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Mapped semantic tokens */
+    --background: var(--ink);
+    --foreground: var(--eclipse);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: var(--ink);
+    --card-foreground: var(--eclipse);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: var(--ink);
+    --popover-foreground: var(--eclipse);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--sunset);
+    --primary-foreground: var(--eclipse);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: var(--lavender);
+    --secondary-foreground: var(--eclipse);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 257 40% 18%;
+    --muted-foreground: 268 30% 80%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: var(--periwinkle);
+    --accent-foreground: var(--ink);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 257 40% 22%;
+    --input: 257 40% 22%;
+    --ring: var(--sunset);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.25rem;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .dark { /* same — single dark theme */
+    --background: var(--ink);
+    --foreground: var(--eclipse);
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
+  ::selection { background: hsl(var(--sunset)); color: hsl(var(--eclipse)); }
+}
+
+@layer components {
+  .label-eyebrow {
+    @apply uppercase font-medium text-xs tracking-[0.2em] text-periwinkle;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-sunset text-white font-medium tracking-wide px-7 py-4 text-sm uppercase transition-all duration-200 hover:bg-sunset/90 hover:translate-y-[-1px];
+    letter-spacing: 0.08em;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent border border-white text-white font-medium tracking-wide px-7 py-4 text-sm uppercase transition-all duration-200 hover:bg-white hover:text-ink;
+    letter-spacing: 0.08em;
+  }
+  /* Texture base layer with 55% Ink overlay */
+  .texture-bg {
+    position: relative;
+    background-color: hsl(var(--ink));
+  }
+  .texture-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/Stark%20Naked_Image%20BACKGROUND.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 0;
+  }
+  .texture-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(var(--ink) / 0.55);
+    z-index: 1;
+  }
+  .texture-bg > * { position: relative; z-index: 2; }
 }
