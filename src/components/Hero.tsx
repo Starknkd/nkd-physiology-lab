@@ -1,5 +1,5 @@
 const WING = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/White%20wing.png";
-const HERO_IMG = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/Female%20exec%20mosh.png";
+const HERO_IMG = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/Anna_founder_image_VR.png";
 
 const Hero = () => {
   return (
@@ -18,15 +18,21 @@ const Hero = () => {
         />
       </div>
 
-      {/* Optional supporting image — right side desktop only */}
+      {/* Founder image — right side desktop only */}
       <img
         src={HERO_IMG}
         alt=""
         aria-hidden="true"
-        className="hidden md:block absolute right-0 top-0 h-full w-[55%] object-cover object-center opacity-40 mix-blend-screen pointer-events-none"
+        className="hidden md:block absolute right-0 top-0 h-full w-[55%] object-cover object-right pointer-events-none"
         loading="eager"
+        onError={(e) => {
+          (e.currentTarget as HTMLImageElement).style.display = "none";
+        }}
       />
-      <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-transparent pointer-events-none" />
+      <div
+        className="hidden md:block absolute inset-0 pointer-events-none"
+        style={{ background: "linear-gradient(to right, rgba(19,7,48,0.8), rgba(19,7,48,0.3))" }}
+      />
 
       <div className="relative z-10 min-h-screen flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-20 md:pb-0 pt-28 md:pt-0 max-w-7xl mx-auto">
         <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>

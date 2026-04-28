@@ -3,21 +3,24 @@ const BASE = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/p
 const steps = [
   {
     label: "Step 1 — Baseline",
-    img: BASE + "Climber.png",
+    img: BASE + "Stark_Naked_Image_APP_IN_HAND.jpg",
     alt: "Lino-cut climber illustration",
     body: "We measure your breathing waveform using clinical-grade capnometry. You see your CO2 levels in real time. Most people are surprised by what they find.",
+    imgClass: "",
   },
   {
     label: "Step 2 — Pressure",
     img: BASE + "Hiker%20and%20VR.png",
     alt: "Lino-cut hiker with VR headset",
     body: "You put on a VR headset and go somewhere your nervous system finds interesting. Your body responds exactly as it would under real pressure. You watch it happen.",
+    imgClass: "",
   },
   {
     label: "Step 3 — Recovery",
-    img: BASE + "Surfer.png",
+    img: BASE + "Stark_Naked_Image_PRAYER.jpg",
     alt: "Lino-cut surfer illustration",
     body: "We guide you back. You feel the shift. You understand — for the first time — what regulation actually means in your body.",
+    imgClass: "object-bottom",
   },
 ];
 
@@ -35,12 +38,12 @@ const LabSteps = () => {
         <ol className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 list-none">
           {steps.map((s) => (
             <li key={s.label} className="flex flex-col">
-              <div className="aspect-[4/5] w-full bg-ink overflow-hidden mb-6 border border-border">
+              <div className="aspect-[4/5] w-full overflow-hidden mb-6 border border-border" style={{ background: "#130730" }}>
                 <img
                   src={s.img}
                   alt={s.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover${s.imgClass ? ` ${s.imgClass}` : ""}`}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).style.display = "none";
                   }}
