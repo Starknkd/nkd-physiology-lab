@@ -11,7 +11,7 @@ const Hero = () => {
     >
       {/* Left column: text content */}
       <div className="flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-12 md:pb-20 pt-10 md:pt-0 z-10 w-full md:w-1/2">
-        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="h-[48px] md:h-[64px] w-auto mb-4 md:mb-5" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="block h-[56px] md:h-[64px] w-auto object-contain max-w-none self-start mb-5" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
         <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>
 
         <h1 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl max-w-3xl">
