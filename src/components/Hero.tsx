@@ -6,8 +6,25 @@ const Hero = () => {
     <section
       id="hero"
       className="texture-bg relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: '#130730' }}
       aria-label="Hero"
     >
+      {/* Hero background image */}
+      <img
+        src={HERO_BG}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        style={{ objectPosition: 'right center' }}
+        loading="eager"
+        onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+      />
+      {/* Gradient overlay: Ink 80% opacity left → 30% right */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: 'linear-gradient(to right, rgba(19,7,48,0.8), rgba(19,7,48,0.3))' }}
+      />
+
       {/* Wing mark top-left */}
       <div className="absolute top-5 left-5 md:top-8 md:left-10 z-10">
         <img
@@ -17,22 +34,6 @@ const Hero = () => {
           style={{ minWidth: 32 }}
         />
       </div>
-
-      {/* Founder image — right side desktop only */}
-      <img
-        src={HERO_IMG}
-        alt=""
-        aria-hidden="true"
-        className="hidden md:block absolute right-0 top-0 h-full w-[55%] object-cover object-right pointer-events-none"
-        loading="eager"
-        onError={(e) => {
-          (e.currentTarget as HTMLImageElement).style.display = "none";
-        }}
-      />
-      <div
-        className="hidden md:block absolute inset-0 pointer-events-none"
-        style={{ background: "linear-gradient(to right, rgba(19,7,48,0.8), rgba(19,7,48,0.3))" }}
-      />
 
       <div className="relative z-10 min-h-screen flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-20 md:pb-0 pt-28 md:pt-0 max-w-7xl mx-auto">
         <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>

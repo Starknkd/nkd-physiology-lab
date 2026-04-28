@@ -1,26 +1,28 @@
+import React from "react";
+
 const BASE = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/";
 
 const steps = [
   {
     label: "Step 1 — Baseline",
-    img: "/Stark_Naked_Image_APP_IN_HAND.jpg",
-    alt: "Lino-cut climber illustration",
+    img: BASE + "Stark_Naked_Image_APP_IN_HAND.jpg",
+    alt: "Person holding the NKD app",
     body: "We measure your breathing waveform using clinical-grade capnometry. You see your CO2 levels in real time. Most people are surprised by what they find.",
-    imgClass: "",
+    imgStyle: {} as React.CSSProperties,
   },
   {
     label: "Step 2 — Pressure",
     img: BASE + "Hiker%20and%20VR.png",
     alt: "Lino-cut hiker with VR headset",
     body: "You put on a VR headset and go somewhere your nervous system finds interesting. Your body responds exactly as it would under real pressure. You watch it happen.",
-    imgClass: "",
+    imgStyle: {} as React.CSSProperties,
   },
   {
     label: "Step 3 — Recovery",
-    img: "/Stark_Naked_Image_PRAYER.jpg",
-    alt: "Lino-cut surfer illustration",
+    img: BASE + "Stark_Naked_Image_PRAYER.jpg",
+    alt: "Person in a prayer pose recovering",
     body: "We guide you back. You feel the shift. You understand — for the first time — what regulation actually means in your body.",
-    imgClass: "object-bottom",
+    imgStyle: { objectPosition: 'center bottom' } as React.CSSProperties,
   },
 ];
 
@@ -43,7 +45,8 @@ const LabSteps = () => {
                   src={s.img}
                   alt={s.alt}
                   loading="lazy"
-                  className={`w-full h-full object-cover${s.imgClass ? ` ${s.imgClass}` : ""}`}
+                  className="w-full h-full object-cover"
+                  style={s.imgStyle}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).style.display = "none";
                   }}
