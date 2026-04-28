@@ -5,10 +5,10 @@ const BASE = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/p
 const steps = [
   {
     label: "Step 1 — Baseline",
-    img: BASE + "Stark_Naked_Image_APP_IN_HAND.jpg",
+    img: "/Stark_Naked_Image_APP_IN_HAND.jpg",
     alt: "Person holding the NKD app",
     body: "We measure your breathing waveform using clinical-grade capnometry. You see your CO2 levels in real time. Most people are surprised by what they find.",
-    imgStyle: {} as React.CSSProperties,
+    imgStyle: { objectPosition: 'center center' } as React.CSSProperties,
   },
   {
     label: "Step 2 — Pressure",
@@ -19,7 +19,7 @@ const steps = [
   },
   {
     label: "Step 3 — Recovery",
-    img: BASE + "Stark_Naked_Image_PRAYER.jpg",
+    img: "/Stark_Naked_Image_PRAYER.jpg",
     alt: "Person in a prayer pose recovering",
     body: "We guide you back. You feel the shift. You understand — for the first time — what regulation actually means in your body.",
     imgStyle: { objectPosition: 'center bottom' } as React.CSSProperties,
