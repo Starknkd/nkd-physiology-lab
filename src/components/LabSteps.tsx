@@ -40,7 +40,7 @@ const LabSteps = () => {
         <ol className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 list-none">
           {steps.map((s) => (
             <li key={s.label} className="flex flex-col">
-              <div className="aspect-[4/5] w-full bg-ink overflow-hidden mb-6 border border-border">
+              <div className="aspect-[4/5] w-full overflow-hidden mb-6 border border-border" style={{ background: "#130730" }}>
                 <img
                   src={s.img}
                   alt={s.alt}
