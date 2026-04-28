@@ -9,13 +9,9 @@ const Hero = () => {
       style={{ backgroundColor: '#130730' }}
       aria-label="Hero"
     >
-      {/* Wing mark — absolute top-left */}
-      <div className="absolute top-6 left-6 md:top-10 md:left-10 z-10">
-        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="h-[64px] md:h-[88px] w-auto object-contain" />
-      </div>
-
       {/* Left column: text content */}
-      <div className="flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-12 md:pb-20 pt-28 md:pt-0 z-10 w-full md:w-1/2">
+      <div className="flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-12 md:pb-20 pt-10 md:pt-0 z-10 w-full md:w-1/2">
+        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="h-[56px] md:h-[72px] w-auto object-contain mb-8 md:mb-10" />
         <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>
 
         <h1 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl max-w-3xl">
