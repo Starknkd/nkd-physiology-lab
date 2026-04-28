@@ -11,7 +11,7 @@ const Hero = () => {
     >
       {/* Wing mark — absolute top-left */}
       <div className="absolute top-6 left-6 md:top-10 md:left-10 z-10">
-        <img src="/Wing_standalone.png" alt="STARKNKD" className="h-[64px] md:h-[88px] w-auto object-contain" />
+        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="h-[64px] md:h-[88px] w-auto object-contain" />
       </div>
 
       {/* Left column: text content */}
