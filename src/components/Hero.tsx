@@ -1,4 +1,4 @@
-const WING = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/White%20wing.png";
+
 const HERO_IMG = "/Stark_Naked_Image_SPEAKER_FULL_PROFILE.jpg";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
     >
       {/* Wing mark top-left */}
       <div className="absolute top-5 left-5 md:top-8 md:left-10 z-10">
-        <img src={WING} alt="STARKNKD wing mark" className="h-8 md:h-10 w-auto" style={{ minWidth: 32 }} />
+        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="h-10 md:h-12 w-auto object-contain" />
       </div>
 
       {/* Left column: text content */}
