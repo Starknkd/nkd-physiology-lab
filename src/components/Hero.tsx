@@ -1,5 +1,5 @@
 const WING = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/White%20wing.png";
-const HERO_IMG = "/Anna_founder_image_VR.png";
+const HERO_BG = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/Anna_founder_image_VR.png";
 
 const Hero = () => {
   return (
