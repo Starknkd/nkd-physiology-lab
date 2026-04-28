@@ -1,5 +1,5 @@
 const WING = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/White%20wing.png";
-const HERO_IMG = "/Anna_founder_image_VR.png";
+const HERO_IMG = "/Stark_Naked_Image_SPEAKER_FULL_PROFILE.jpg";
 
 const Hero = () => {
   return (
@@ -45,14 +45,14 @@ const Hero = () => {
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover pointer-events-none"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: '65% center' }}
           loading="eager"
           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
         />
         {/* Left-edge fade: blends image seamlessly into Ink background */}
         <div
-          className="absolute inset-y-0 left-0 w-2/5 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, rgba(19,7,48,1), transparent)' }}
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.6) 40%, rgba(19,7,48,0) 100%)' }}
         />
       </div>
     </section>
