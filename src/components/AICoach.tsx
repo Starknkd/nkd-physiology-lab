@@ -56,7 +56,7 @@ const AICoach = () => {
         </div>
 
         {/* Input bar — static, suggestive */}
-        <div className="mt-8 border border-border px-4 py-3 text-white/50 flex items-center justify-between max-w-3xl">
+        <div className="mt-8 border border-sunset px-4 py-3 text-white/50 flex items-center justify-between max-w-3xl transition-colors duration-200 hover:border-sunset hover:bg-white/5">
           <span className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}>
             {placeholders[placeholderIndex]}
           </span>
