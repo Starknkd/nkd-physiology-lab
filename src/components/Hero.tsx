@@ -64,7 +64,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.4) 40%, rgba(19,7,48,0) 100%)",
+            background: "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.3) 40%, rgba(19,7,48,0) 100%)",
           }}
         />
       </div>
@@ -73,7 +73,7 @@ const Hero = () => {
       <div
         className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, rgba(19,7,48,0) 60%, rgba(19,7,48,0.4) 80%, rgba(19,7,48,1) 100%)",
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 60%, rgba(19,7,48,0.3) 80%, rgba(19,7,48,1) 100%)",
         }}
       />
     </section>
