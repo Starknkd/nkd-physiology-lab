@@ -29,17 +29,19 @@ const BookSession = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="hidden md:block relative h-full min-h-[640px] overflow-hidden">
+          <div className="hidden md:block relative h-full min-h-[640px] w-full overflow-hidden">
             <img
               src="/Anna_founder_image_VR.png"
               alt="Founder demonstrating physiology training in VR environment"
-              className="absolute inset-0 w-full h-full object-cover object-[center_right] opacity-90"
+              className="w-full h-full object-cover"
             />
             <div
-              className="absolute inset-0 pointer-events-none 
-  [mask-image:linear-gradient(to_right,black_65%,transparent_100%)]
-  bg-ink"
-            ></div>
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0) 55%)",
+              }}
+            />
           </div>
         </div>
       </div>
