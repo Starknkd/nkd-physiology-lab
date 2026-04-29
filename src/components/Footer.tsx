@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-8">
           <div className="flex flex-col gap-5 max-w-sm">
-            <img src={WING} alt="STARKNKD" className="h-6 md:h-7 w-auto opacity-70 hover:opacity-90 transition" />
+            <img src={WING} alt="STARKNKD" className="h-6 md:h-7 w-auto opacity-90 hover:opacity-90 transition" />
             <p className="text-white/70 font-light text-sm leading-relaxed">
               NKD Breathing Lab. Science-led human performance. Central London.
             </p>
