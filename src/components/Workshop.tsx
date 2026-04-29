@@ -1,8 +1,8 @@
 const Workshop = () => {
   const points = [
-      "Free weekly session — small group, limited places.",
-  "Live in Central London, led by a human performance specialist.",
-    "For people who want to feel calmer, clearer, and more in control under pressure.",",
+    "Free weekly session — small group, limited places.",
+    "Live in Central London, led by a human performance specialist.",
+    "For people who want to feel calmer, clearer, and more in control under pressure.",
   ];
 
   return (
