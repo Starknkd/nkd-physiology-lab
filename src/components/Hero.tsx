@@ -53,7 +53,7 @@ const Hero = () => {
           src={HERO_IMG}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover pointer-events-none brightness-150 contrast-125 saturate-150 md:brightness-100 md:contrast-100 md:saturate-100"
+          className="w-full h-full object-cover pointer-events-none brightness-110 contrast-105 saturate-105 md:brightness-100 md:contrast-100 md:saturate-100"
           style={{ objectPosition: "65% center" }}
           loading="eager"
           onError={(e) => {
@@ -68,21 +68,21 @@ const Hero = () => {
               "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.18) 28%, rgba(19,7,48,0) 55%), linear-gradient(to left, rgba(19,7,48,0.35) 0%, rgba(19,7,48,0) 18%)",
           }}
         />
-        {/* Mobile left fade only (kept minimal) */}
+        {/* Mobile left fade only (very minimal, edge only) */}
         <div
           className="md:hidden absolute inset-0 pointer-events-none"
           style={{
-            background: "linear-gradient(to right, rgba(19,7,48,0.45) 0%, rgba(19,7,48,0) 30%)",
+            background: "linear-gradient(to right, rgba(19,7,48,0.2) 0%, rgba(19,7,48,0) 12%)",
           }}
         />
       </div>
 
-      {/* Bottom fade — mobile (very light, starts late) */}
+      {/* Bottom fade — mobile (very light, edge only) */}
       <div
-        className="absolute inset-x-0 bottom-0 h-full pointer-events-none md:hidden"
+        className="absolute inset-x-0 bottom-0 h-40 pointer-events-none md:hidden"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(19,7,48,0) 88%, rgba(19,7,48,0.12) 97%, rgba(19,7,48,1) 100%)",
+            "linear-gradient(to bottom, rgba(19,7,48,0) 0%, rgba(19,7,48,0.12) 70%, rgba(19,7,48,1) 100%)",
         }}
       />
 
