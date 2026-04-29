@@ -53,35 +53,45 @@ const Hero = () => {
           src={HERO_IMG}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover pointer-events-none brightness-115 contrast-110 saturate-130 md:brightness-100 md:contrast-100 md:saturate-100"
+          className="w-full h-full object-cover pointer-events-none brightness-125 contrast-115 saturate-140 md:brightness-100 md:contrast-100 md:saturate-100"
           style={{ objectPosition: "65% center" }}
           loading="eager"
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).style.display = "none";
           }}
         />
-        {/* Left-edge fade: blends image seamlessly into Ink background */}
+        {/* Desktop edge blends: left + right soft fade into Ink */}
         <div
-          className="absolute inset-0 pointer-events-none"
+          className="hidden md:block absolute inset-0 pointer-events-none"
           style={{
-            background: "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.18) 28%, rgba(19,7,48,0) 55%)",
+            background:
+              "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.18) 28%, rgba(19,7,48,0) 55%), linear-gradient(to left, rgba(19,7,48,0.35) 0%, rgba(19,7,48,0) 18%)",
+          }}
+        />
+        {/* Mobile left fade only (kept minimal) */}
+        <div
+          className="md:hidden absolute inset-0 pointer-events-none"
+          style={{
+            background: "linear-gradient(to right, rgba(19,7,48,0.45) 0%, rgba(19,7,48,0) 30%)",
           }}
         />
       </div>
 
-      {/* Bottom fade — mobile (light) */}
+      {/* Bottom fade — mobile (very light, starts late) */}
       <div
         className="absolute inset-x-0 bottom-0 h-full pointer-events-none md:hidden"
         style={{
-          background: "linear-gradient(to bottom, rgba(19,7,48,0) 85%, rgba(19,7,48,0.12) 96%, rgba(19,7,48,1) 100%)",
+          background:
+            "linear-gradient(to bottom, rgba(19,7,48,0) 88%, rgba(19,7,48,0.12) 97%, rgba(19,7,48,1) 100%)",
         }}
       />
 
-      {/* Bottom fade — desktop (strong) */}
+      {/* Bottom fade — desktop (smooth, gradual) */}
       <div
         className="hidden md:block absolute inset-x-0 bottom-0 h-full pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, rgba(19,7,48,0) 75%, rgba(19,7,48,0.45) 95%, rgba(19,7,48,1) 100%)",
+          background:
+            "linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
         }}
       />
     </section>
