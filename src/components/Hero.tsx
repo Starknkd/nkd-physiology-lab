@@ -53,7 +53,7 @@ const Hero = () => {
           src={HERO_IMG}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover pointer-events-none"
+          className="w-full h-full object-cover pointer-events-none brightness-110 md:brightness-100"
           style={{ objectPosition: "65% center" }}
           loading="eager"
           onError={(e) => {
