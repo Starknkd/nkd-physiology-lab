@@ -5,10 +5,10 @@ const Science = () => {
     "Disrupt it — even slightly — and clear thinking, emotional control, and access to everything you know becomes significantly harder.",
   ];
   return (
-    <section id="science" className="relative min-h-[720px] md:min-h-[820px] texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
+    <section id="science" className="relative min-h-[820px] texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
 
-      {/* Text block */}
-      <div className="relative z-10 max-w-xl">
+      {/* TEXT */}
+      <div className="max-w-xl relative z-10">
         <p className="label-eyebrow mb-8">The science</p>
         <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-16 md:mb-20">
           This is not mindset.<br />
@@ -29,22 +29,21 @@ const Science = () => {
         <p className="mt-16 md:mt-24 text-sunset text-lg md:text-2xl font-light leading-snug max-w-3xl">
           The same science used to train special forces operators and medics. Now available to anyone whose body works against them under pressure.
         </p>
-
-        {/* Mobile diagram — inline below text */}
-        <img
-          src="/Lungs_and_brain_diagram_landing_page.png"
-          alt="Diagram showing the relationship between lungs, CO2, and brain function"
-          className="block md:hidden mt-10 w-full h-auto object-contain"
-          style={{ mixBlendMode: 'screen' }}
-        />
       </div>
 
-      {/* Desktop diagram — absolute bottom-right */}
+      {/* DESKTOP DIAGRAM */}
       <img
         src="/Lungs_and_brain_diagram_landing_page.png"
-        alt=""
-        aria-hidden="true"
-        className="hidden md:block absolute right-0 bottom-0 w-[68%] lg:w-[60%] h-auto object-contain max-w-none flex-shrink-0 translate-y-[24px]"
+        alt="Diagram showing the relationship between lungs, CO2, and brain function"
+        className="hidden md:block absolute right-0 bottom-0 w-[65%] h-auto object-contain pointer-events-none"
+        style={{ mixBlendMode: 'screen' }}
+      />
+
+      {/* MOBILE DIAGRAM */}
+      <img
+        src="/Lungs_and_brain_diagram_landing_page.png"
+        alt="Diagram showing the relationship between lungs, CO2, and brain function"
+        className="block md:hidden mt-10 w-full h-auto object-contain"
         style={{ mixBlendMode: 'screen' }}
       />
 
