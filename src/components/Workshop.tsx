@@ -12,7 +12,7 @@ const Workshop = () => {
 
         <p className="label-eyebrow mb-4 text-white/80">Train with Anna — Human Performance Specialist</p>
 
-        <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-12 md:mb-16">
+        <h2 className="font-bold leading-[0.9] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-12 md:mb-16">
           A weekly practice
           <br />
           to get out of
