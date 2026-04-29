@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const prompts = [
   "I freeze before presentations.",
   "I can't sleep when I'm under pressure.",
@@ -5,7 +7,27 @@ const prompts = [
   "I want to recover faster after hard sessions.",
 ];
 
+const placeholders = [
+  "Ask your question...",
+  "Why do I hold my breath under stress?",
+  "How do I reset my nervous system fast?",
+];
+
 const AICoach = () => {
+  const [placeholderIndex, setPlaceholderIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setPlaceholderIndex((i) => (i + 1) % placeholders.length);
+        setFade(true);
+      }, 300);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="coach" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
       <div className="max-w-5xl mx-auto">
@@ -19,27 +41,32 @@ const AICoach = () => {
           Trained on the same physiology we teach in the lab. No fluff. No wellness-speak. Just what's happening in your body — and what to do about it.
         </p>
 
-        {/* Suggested prompts — non-functional buttons */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 mb-10 md:mb-12">
+        {/* Suggested prompts — visible, hoverable, non-functional */}
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
           {prompts.map((p) => (
             <button
               key={p}
               type="button"
-              disabled
-              aria-disabled="true"
               tabIndex={-1}
-              className="text-left text-sm md:text-base font-light text-white/85 border border-border px-5 py-4 cursor-not-allowed hover:border-periwinkle/60 transition-colors"
+              className="text-left text-sm md:text-base font-light border border-border bg-white/5 text-white/85 px-5 py-4 transition-all duration-200 hover:bg-sunset hover:text-ink hover:border-sunset cursor-default"
             >
               {p}
             </button>
           ))}
         </div>
 
-        {/* Restrained response container */}
-        <div className="border-l-2 border-periwinkle pl-6 md:pl-8 max-w-3xl">
-          <p className="label-eyebrow mb-4">Response</p>
-          <p className="text-white/60 font-light italic text-base md:text-lg leading-relaxed">
-            The AI coach is in development. Join the lab to be first to access it.
+        {/* Input bar — static, suggestive */}
+        <div className="mt-8 border border-border px-4 py-3 text-white/50 flex items-center justify-between max-w-3xl">
+          <span className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}>
+            {placeholders[placeholderIndex]}
+          </span>
+          <span className="text-sunset">→</span>
+        </div>
+
+        {/* Response */}
+        <div className="mt-6 border-l border-border pl-4 max-w-3xl">
+          <p className="text-white/70 italic font-light">
+            All your questions answered. Watch this space.
           </p>
         </div>
       </div>
