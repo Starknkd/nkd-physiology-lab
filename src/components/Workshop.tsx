@@ -1,6 +1,6 @@
 const Workshop = () => {
   const points = [
-    "Weekly online practice — 45 minutes, live.",
+    "Weekly practice — 45 minutes, live in Central London.",
     "Built around the same physiology taught in the lab.",
     "For people who want to keep the work going.",
   ];
