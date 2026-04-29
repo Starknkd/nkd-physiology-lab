@@ -9,7 +9,10 @@ const Workshop = () => {
     <section id="weekly" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
       <div className="max-w-5xl mx-auto">
         <p className="label-eyebrow mb-8">Calm Under Pressure — Workshop</p>
-        <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
+
+        <p className="label-eyebrow mb-6">Train with Anna — Human Performance Specialist</p>
+
+        <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl">
           A weekly practice
           <br />
           to get out of
