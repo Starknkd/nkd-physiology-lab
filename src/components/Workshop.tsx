@@ -31,7 +31,7 @@ const Workshop = () => {
           ))}
         </ul>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center mt-6">
           <a href="#book" className="btn-primary w-full sm:w-auto">
             Join the workshop →
           </a>
