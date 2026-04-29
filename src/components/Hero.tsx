@@ -69,14 +69,19 @@ const Hero = () => {
         />
       </div>
 
-      {/* Bottom fade: smooth transition into next section */}
+      {/* Bottom fade — mobile (light) */}
       <div
-        className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-full pointer-events-none md:hidden"
         style={{
-          background: `
-      linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,0.15) 92%, rgba(19,7,48,1) 100%),
-      linear-gradient(to bottom, rgba(19,7,48,0) 80%, rgba(19,7,48,0.35) 95%, rgba(19,7,48,1) 100%)
-    `,
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 85%, rgba(19,7,48,0.12) 96%, rgba(19,7,48,1) 100%)",
+        }}
+      />
+
+      {/* Bottom fade — desktop (strong) */}
+      <div
+        className="hidden md:block absolute inset-x-0 bottom-0 h-full pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 75%, rgba(19,7,48,0.45) 95%, rgba(19,7,48,1) 100%)",
         }}
       />
     </section>
