@@ -4,9 +4,9 @@ const BookSession = () => {
       <div className="max-w-6xl mx-auto">
         <p className="label-eyebrow mb-8">Book your session</p>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
           {/* LEFT COLUMN */}
-          <div>
+          <div className="flex flex-col h-full">
             <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
               One session.
               <br />
@@ -21,19 +21,21 @@ const BookSession = () => {
             </div>
 
             {/* FORM */}
-            <div className="w-full min-h-[520px] md:min-h-[640px] border border-white/10 flex items-center justify-center">
-              <p className="text-white/40 text-sm tracking-wide">TALLY FORM EMBED GOES HERE</p>
+            <div className="mt-auto">
+              <div className="w-full min-h-[520px] flex items-center justify-center">
+                <p className="text-white/40 text-sm tracking-wide">TALLY FORM EMBED GOES HERE</p>
+              </div>
             </div>
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="hidden md:block relative min-h-[640px]">
+          <div className="hidden md:block relative h-full min-h-[640px] overflow-hidden">
             <img
               src="/Anna_founder_image_VR.png"
               alt="Founder demonstrating physiology training in VR environment"
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-[center_right] opacity-90"
             />
-            <div className="absolute inset-0 bg-ink/50"></div>
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-ink/40 to-ink"></div>
           </div>
         </div>
       </div>
