@@ -70,12 +70,11 @@ const Hero = () => {
         />
         {/* Mobile left fade only (very minimal, edge only) */}
         <div
-          className="md:hidden absolute inset-0 pointer-events-none"
-          style={{
-            background: "linear-gradient(to right, rgba(19,7,48,0.2) 0%, rgba(19,7,48,0) 12%)",
-          }}
-        />
-      </div>
+  className="hidden md:block absolute inset-0 pointer-events-none"
+  style={{
+    background: "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.1) 30%, rgba(19,7,48,0) 60%)"
+  }}
+/>
 
       {/* Bottom fade — mobile (very light, edge only) */}
       <div className="absolute inset-x-0 bottom-0 pointer-events-none h-24 md:hidden">
