@@ -20,7 +20,7 @@ const Workshop = () => {
           <span className="text-sunset">your own way.</span>
         </h2>
 
-        <ul className="space-y-6 md:space-y-8 list-none mb-12 md:mb-16 max-w-3xl">
+        <ul className="space-y-6 md:space-y-8 list-none mb-14 md:mb-18 max-w-3xl">
           {points.map((t, i) => (
             <li
               key={i}
