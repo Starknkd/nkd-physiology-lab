@@ -48,12 +48,12 @@ const Hero = () => {
       </div>
 
       {/* Right column: image — full width on mobile, 50% on desktop */}
-      <div className="relative w-full h-72 md:w-1/2 md:h-auto flex-shrink-0">
+      <div className="relative w-full h-[460px] md:w-1/2 md:h-auto flex-shrink-0">
         <img
           src={HERO_IMG}
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover pointer-events-none brightness-110 contrast-105 saturate-105 md:brightness-100 md:contrast-100 md:saturate-100"
+          className="w-full h-full object-cover pointer-events-none"
           style={{ objectPosition: "65% center" }}
           loading="eager"
           onError={(e) => {
@@ -70,16 +70,19 @@ const Hero = () => {
         />
         {/* Mobile left fade only (very minimal, edge only) */}
         <div
- className="md:hidden absolute inset-0 pointer-events-none"
-  style={{
-    background: "linear-gradient(to right, rgba(19,7,48,0.6) 0%, rgba(19,7,48,0.1) 20%, rgba(19,7,48,0) 40%)"
-  }}
-/>
+          className="md:hidden absolute inset-0 pointer-events-none"
+          style={{
+            background: "linear-gradient(to right, rgba(19,7,48,0.45) 0%, rgba(19,7,48,0.08) 14%, rgba(19,7,48,0) 28%)",
+          }}
+        />
 
-      {/* Bottom fade — mobile (very light, edge only) */}
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-24 md:hidden">
-        <div className="w-full h-full bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-      </div>
+        {/* Bottom fade — mobile (edge only, does not obscure subject) */}
+        <div
+          className="absolute inset-x-0 bottom-0 pointer-events-none h-20 md:hidden"
+          style={{
+            background: "linear-gradient(to bottom, rgba(19,7,48,0) 0%, rgba(19,7,48,0.5) 60%, rgba(19,7,48,1) 100%)",
+          }}
+        />
 
       {/* Bottom fade — desktop (smooth, gradual) */}
       <div
