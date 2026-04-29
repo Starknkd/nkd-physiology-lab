@@ -71,11 +71,12 @@ const Hero = () => {
 
       {/* Bottom fade: smooth transition into next section */}
       <div
-        className="absolute inset-x-0 bottom-0 h-[50%] md:h-full pointer-events-none"
-        style={{
-          linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,0.15) 92%, rgba(19,7,48,1) 100%)
-        }}
-      />
+        <div
+  className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
+  style={{
+    background: "linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,0.15) 92%, rgba(19,7,48,1) 100%)"
+  }}
+/>
     </section>
   );
 };
