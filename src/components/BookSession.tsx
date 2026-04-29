@@ -38,8 +38,10 @@ const BookSession = () => {
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background:
-                  "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0) 55%)",
+                background: `
+                  linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0) 55%),
+                  linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,1) 100%)
+                `,
               }}
             />
           </div>
