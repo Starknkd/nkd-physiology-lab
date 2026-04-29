@@ -6,7 +6,7 @@ const Science = () => {
   ];
   return (
     <section id="science" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-[1fr_1.1fr] gap-8 items-start">
 
         {/* Left: text content */}
         <div>
@@ -33,11 +33,11 @@ const Science = () => {
         </div>
 
         {/* Right: diagram */}
-        <div className="flex items-start md:-ml-6">
+        <div className="flex items-start justify-self-start">
           <img
             src="/Lungs_and_brain_diagram_landing_page.png"
             alt="Diagram showing the relationship between lungs, CO2, and brain function"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain max-w-none flex-shrink-0"
             style={{ mixBlendMode: 'screen' }}
           />
         </div>
