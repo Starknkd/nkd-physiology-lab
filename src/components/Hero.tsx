@@ -71,7 +71,7 @@ const Hero = () => {
 
       {/* Bottom fade: smooth transition into next section */}
       <div
-        className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-[50%] md:h-full pointer-events-none"
         style={{
           linear-gradient(to bottom, rgba(19,7,48,0) 80%, rgba(19,7,48,0.25) 95%, rgba(19,7,48,1) 100%)
         }}
