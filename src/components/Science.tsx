@@ -1,3 +1,5 @@
+import diagram from "../assets/Lungs_and_brain_diagram_landing_page.png";
+
 const Science = () => {
   const statements = [
     "Stress starts with breathing behaviour.",
@@ -40,7 +42,7 @@ const Science = () => {
 
         {/* DESKTOP DIAGRAM */}
         <img
-          src="/Lungs_and_brain_diagram_landing_page.png"
+          src={diagram}
           alt="Diagram showing the relationship between lungs, CO2, and brain function"
           className="hidden md:block absolute right-[-5%] top-1/2 translate-y-[-40%] w-[65%] lg:w-[60%] h-auto object-contain pointer-events-none"
         />
@@ -48,7 +50,7 @@ const Science = () => {
 
       {/* MOBILE DIAGRAM */}
       <img
-        src="/Lungs_and_brain_diagram_landing_page.png"
+        src={diagram}
         alt="Diagram showing physiology"
         className="block md:hidden mt-16 w-full h-auto object-contain"
       />
