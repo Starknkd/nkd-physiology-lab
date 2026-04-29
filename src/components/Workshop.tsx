@@ -15,9 +15,9 @@ const Workshop = () => {
         <h2 className="font-bold leading-[1.0] md:leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
           A weekly practice
           <br />
-          to get out of
+          to build
           <br />
-          <span className="text-sunset">your own way.</span>
+          <span className="text-sunset">calm under pressure.</span>
         </h2>
 
         <ul className="space-y-6 md:space-y-8 list-none mb-12 md:mb-16 max-w-3xl">
