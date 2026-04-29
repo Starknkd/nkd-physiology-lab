@@ -1,4 +1,4 @@
-import diagram from "../src/assets/Lungs_and_brain_diagram_landing_page.png";
+import diagram from "../assets/Lungs_and_brain_diagram_landing_page.png";
 
 const Science = () => {
   const statements = [
@@ -8,8 +8,12 @@ const Science = () => {
   ];
 
   return (
-    <section id="science" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20 relative min-h-[820px]">
+    <section
+      id="science"
+      className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20 relative min-h-[820px]"
+    >
       <div className="max-w-7xl mx-auto relative">
+        
         {/* TEXT */}
         <div className="max-w-xl relative z-10 pr-12 md:pr-24 lg:pr-32">
           <p className="label-eyebrow mb-8">The science</p>
@@ -32,8 +36,7 @@ const Science = () => {
           </ul>
 
           <p className="mt-16 md:mt-24 text-sunset text-lg md:text-2xl font-light leading-snug max-w-3xl">
-            The same science used to train special forces operators and medics. Now available to anyone whose body works
-            against them under pressure.
+            The same science used to train special forces operators and medics. Now available to anyone whose body works against them under pressure.
           </p>
         </div>
 
