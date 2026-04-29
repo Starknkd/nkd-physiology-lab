@@ -6,16 +6,15 @@ const Workshop = () => {
   ];
 
   return (
-    <section
-      id="weekly"
-      className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20"
-    >
+    <section id="weekly" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
       <div className="max-w-5xl mx-auto">
         <p className="label-eyebrow mb-8">Calm Under Pressure — Workshop</p>
         <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
-          A weekly practice<br />
-          for people who<br />
-          <span className="text-sunset">don't break.</span>
+          A weekly practice
+          <br />
+          to get out of
+          <br />
+          <span className="text-sunset">your own way.</span>
         </h2>
 
         <ul className="space-y-6 md:space-y-8 list-none mb-12 md:mb-16 max-w-3xl">
