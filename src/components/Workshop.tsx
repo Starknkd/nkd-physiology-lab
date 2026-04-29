@@ -10,7 +10,7 @@ const Workshop = () => {
       <div className="max-w-5xl mx-auto">
         <p className="label-eyebrow mb-8">Calm Under Pressure — Workshop</p>
 
-        <p className="label-eyebrow mb-6">Train with Anna — Human Performance Specialist</p>
+        <p className="label-eyebrow mb-4 text-white/60">Train with Anna — Human Performance Specialist</p>
 
         <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl">
           A weekly practice
