@@ -88,6 +88,7 @@ const Hero = () => {
           background: "linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
         }}
       />
+      </div>
     </section>
   );
 };
