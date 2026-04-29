@@ -1,4 +1,3 @@
-
 const HERO_IMG = "/Stark_Naked_Image_SPEAKER_FULL_PROFILE.jpg";
 
 const Hero = () => {
@@ -6,17 +5,26 @@ const Hero = () => {
     <section
       id="hero"
       className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
-      style={{ backgroundColor: '#130730' }}
+      style={{ backgroundColor: "#130730" }}
       aria-label="Hero"
     >
       {/* Left column: text content */}
       <div className="flex flex-col justify-end md:justify-center px-5 md:px-10 lg:px-20 pb-12 md:pb-20 pt-10 md:pt-0 z-10 w-full md:w-1/2">
-        <img src="/Final_V2_WHT.png" alt="STARKNKD" className="block h-[56px] md:h-[64px] w-auto object-contain max-w-none self-start mb-5" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+        <img
+          src="/Final_V2_WHT.png"
+          alt="STARKNKD"
+          className="block h-[56px] md:h-[64px] w-auto object-contain max-w-none self-start mb-5"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+          }}
+        />
         <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>
 
         <h1 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl max-w-3xl">
-          See your nervous system<br />
-          respond to pressure.<br />
+          See your nervous system
+          <br />
+          respond to pressure.
+          <br />
           <span className="text-sunset">In real time.</span>
         </h1>
 
@@ -27,8 +35,13 @@ const Hero = () => {
         </div>
 
         <div id="reserve" className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center">
-          <a href="#book" className="btn-primary w-full sm:w-auto">Reserve my slot →</a>
-          <a href="#weekly" className="text-sm uppercase tracking-[0.12em] text-white/80 hover:text-white border-b border-white/40 hover:border-white pb-1 self-start sm:self-auto">
+          <a href="#book" className="btn-primary w-full sm:w-auto">
+            Reserve my slot →
+          </a>
+          <a
+            href="#weekly"
+            className="text-sm uppercase tracking-[0.12em] text-white/80 hover:text-white border-b border-white/40 hover:border-white pb-1 self-start sm:self-auto"
+          >
             Want a weekly practice instead? →
           </a>
         </div>
@@ -41,21 +54,27 @@ const Hero = () => {
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover pointer-events-none"
-          style={{ objectPosition: '65% center' }}
+          style={{ objectPosition: "65% center" }}
           loading="eager"
-          onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+          }}
         />
         {/* Left-edge fade: blends image seamlessly into Ink background */}
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.6) 40%, rgba(19,7,48,0) 100%)' }}
+          style={{
+            background: "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.4) 40%, rgba(19,7,48,0) 100%)",
+          }}
         />
       </div>
 
       {/* Bottom fade: smooth transition into next section */}
       <div
         className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
-        style={{ background: 'linear-gradient(to bottom, rgba(19,7,48,0) 60%, rgba(19,7,48,0.6) 80%, rgba(19,7,48,1) 100%)' }}
+        style={{
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 60%, rgba(19,7,48,0.4) 80%, rgba(19,7,48,1) 100%)",
+        }}
       />
     </section>
   );
