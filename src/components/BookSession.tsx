@@ -35,7 +35,11 @@ const BookSession = () => {
               alt="Founder demonstrating physiology training in VR environment"
               className="absolute inset-0 w-full h-full object-cover object-[center_right] opacity-90"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-ink/10 to-ink/60"></div>
+            <div
+              className="absolute inset-0 pointer-events-none 
+  [mask-image:linear-gradient(to_left,black_65%,transparent_100%)] 
+  bg-ink"
+            ></div>
           </div>
         </div>
       </div>
