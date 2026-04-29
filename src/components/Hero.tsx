@@ -78,20 +78,15 @@ const Hero = () => {
       </div>
 
       {/* Bottom fade — mobile (very light, edge only) */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-40 pointer-events-none md:hidden"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(19,7,48,0) 0%, rgba(19,7,48,0.12) 70%, rgba(19,7,48,1) 100%)",
-        }}
-      />
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none h-24 md:hidden">
+        <div className="w-full h-full bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+      </div>
 
       {/* Bottom fade — desktop (smooth, gradual) */}
       <div
         className="hidden md:block absolute inset-x-0 bottom-0 h-full pointer-events-none"
         style={{
-          background:
-            "linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
         }}
       />
     </section>
