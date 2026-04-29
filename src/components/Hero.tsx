@@ -53,7 +53,7 @@ const Hero = () => {
           src={HERO_IMG}
           alt=""
           aria-hidden="true"
-         className="w-full h-full object-cover pointer-events-none brightness-115 contrast-110 saturate-130 md:brightness-100 md:contrast-100 md:saturate-100"
+          className="w-full h-full object-cover pointer-events-none brightness-115 contrast-110 saturate-130 md:brightness-100 md:contrast-100 md:saturate-100"
           style={{ objectPosition: "65% center" }}
           loading="eager"
           onError={(e) => {
@@ -71,12 +71,11 @@ const Hero = () => {
 
       {/* Bottom fade: smooth transition into next section */}
       <div
-        <div
-  className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
-  style={{
-    background: "linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,0.15) 92%, rgba(19,7,48,1) 100%)"
-  }}
-/>
+        className="absolute inset-x-0 bottom-0 h-full pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, rgba(19,7,48,0) 70%, rgba(19,7,48,0.15) 92%, rgba(19,7,48,1) 100%)",
+        }}
+      />
     </section>
   );
 };
