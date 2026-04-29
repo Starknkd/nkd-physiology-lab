@@ -1,8 +1,8 @@
 const Workshop = () => {
   const points = [
-    "Free weekly session — small group, limited places.",
-    "Live in Central London, led by a human performance specialist.",
-    "For people who want to feel calmer, clearer, and more in control under pressure.",
+    "Weekly practice — 60 minutes, live in Central London.",
+    "Built around the same physiology taught in the lab.",
+    "For people who want to feel calmer, clearer, and in control when it matters.",
   ];
 
   return (
@@ -10,9 +10,9 @@ const Workshop = () => {
       <div className="max-w-5xl mx-auto">
         <p className="label-eyebrow mb-12">Calm Under Pressure — Workshop</p>
 
-        <p className="label-eyebrow mb-4 text-white/80">Train with Anna — Human Performance Specialist</p>
+        <p className="label-eyebrow mb-6 md:mb-8 text-white/80">Train with Anna — Human Performance Specialist</p>
 
-        <h2 className="font-bold leading-[0.9] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-12 md:mb-16">
+        <h2 className="font-bold leading-[1.0] md:leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
           A weekly practice
           <br />
           to get out of
@@ -20,18 +20,18 @@ const Workshop = () => {
           <span className="text-sunset">your own way.</span>
         </h2>
 
-        <ul className="space-y-6 md:space-y-8 list-none mb-14 md:mb-18 max-w-3xl">
+        <ul className="space-y-6 md:space-y-8 list-none mb-12 md:mb-16 max-w-3xl">
           {points.map((t, i) => (
             <li
               key={i}
-              className="text-white/90 font-light text-lg md:text-2xl leading-snug border-l-2 border-periwinkle pl-6 md:pl-8"
+              className="text-white/95 font-light text-lg md:text-2xl leading-snug border-l-2 border-periwinkle/60 pl-6 md:pl-8"
             >
               {t}
             </li>
           ))}
         </ul>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center mt-6">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center mt-4">
           <a href="#book" className="btn-primary w-full sm:w-auto">
             Join the workshop →
           </a>
