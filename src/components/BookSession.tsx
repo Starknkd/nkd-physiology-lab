@@ -37,7 +37,7 @@ const BookSession = () => {
             />
             <div
               className="absolute inset-0 pointer-events-none 
-  [mask-image:linear-gradient(to_left,black_65%,transparent_100%)] 
+  [mask-image:linear-gradient(to_right,black_65%,transparent_100%)]
   bg-ink"
             ></div>
           </div>
