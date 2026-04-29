@@ -1,13 +1,16 @@
-const WING = "https://raw.githubusercontent.com/Starknkd/starknkdjourneys/main/public/White%20wing.png";
-
 const Footer = () => {
   return (
     <footer className="bg-ink border-t border-border px-5 md:px-10 lg:px-20 py-16 md:py-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-8">
-          <div className="flex flex-col gap-5 max-w-sm">
-            <img src={WING} alt="STARKNKD" className="h-6 md:h-7 w-auto opacity-90 hover:opacity-90 transition" />
-            <p className="text-white/70 font-light text-sm leading-relaxed">
+          <div className="flex flex-col gap-3 max-w-sm">
+            <img
+              src="/Final_V2_WHT.png"
+              alt="STARKNKD"
+              className="block h-[56px] md:h-[64px] w-auto object-contain max-w-none self-start opacity-100"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+            />
+            <p className="text-white/70 font-light text-sm leading-relaxed mt-2">
               NKD Breathing Lab. Science-led human performance. Central London.
             </p>
           </div>
