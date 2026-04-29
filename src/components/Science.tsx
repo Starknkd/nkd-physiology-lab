@@ -1,12 +1,12 @@
 const Science = () => {
   const statements = [
-    "Most stress responses start with breathing behaviour, not psychology.",
+    "Stress starts with breathing behaviour.",
     "Breathing drives your CO2 levels. CO2 regulates how much oxygen your brain actually receives.",
     "Disrupt it — even slightly — and clear thinking, emotional control, and access to everything you know becomes significantly harder.",
   ];
   return (
     <section id="science" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
         {/* Left: text content */}
         <div>
@@ -33,11 +33,11 @@ const Science = () => {
         </div>
 
         {/* Right: diagram */}
-        <div className="flex items-start justify-end md:pl-8">
+        <div className="flex items-start md:-ml-6">
           <img
             src="/Lungs_and_brain_diagram_landing_page.png"
             alt="Diagram showing the relationship between lungs, CO2, and brain function"
-            className="w-full max-w-none"
+            className="w-full h-auto object-contain"
             style={{ mixBlendMode: 'screen' }}
           />
         </div>
