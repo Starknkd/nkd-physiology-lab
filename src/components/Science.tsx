@@ -5,11 +5,11 @@ const Science = () => {
     "Disrupt it — even slightly — and clear thinking, emotional control, and access to everything you know becomes significantly harder.",
   ];
   return (
-    <section id="science" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-[1fr_1.1fr] gap-8 items-start">
+    <section id="science" className="relative texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
+      <div className="max-w-7xl mx-auto">
 
         {/* Left: text content */}
-        <div>
+        <div className="md:w-1/2">
           <p className="label-eyebrow mb-8">The science</p>
           <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-16 md:mb-20">
             This is not mindset.<br />
@@ -32,17 +32,26 @@ const Science = () => {
           </p>
         </div>
 
-        {/* Right: diagram */}
-        <div className="flex items-start justify-self-start">
+        {/* Diagram: mobile — inline below text */}
+        <div className="block md:hidden mt-10">
           <img
             src="/Lungs_and_brain_diagram_landing_page.png"
             alt="Diagram showing the relationship between lungs, CO2, and brain function"
-            className="w-full h-auto object-contain max-w-none flex-shrink-0"
+            className="w-full h-auto object-contain"
             style={{ mixBlendMode: 'screen' }}
           />
         </div>
 
       </div>
+
+      {/* Diagram: desktop — absolutely positioned lower-right */}
+      <img
+        src="/Lungs_and_brain_diagram_landing_page.png"
+        alt=""
+        aria-hidden="true"
+        className="hidden md:block absolute right-0 bottom-0 w-[60%]"
+        style={{ mixBlendMode: 'screen', transform: 'translateY(20px)' }}
+      />
     </section>
   );
 };
