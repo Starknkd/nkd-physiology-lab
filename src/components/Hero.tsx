@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
+      className="relative min-h-screen w-full overflow-hidden"
       style={{ backgroundColor: "#130730" }}
       aria-label="Hero"
     >
