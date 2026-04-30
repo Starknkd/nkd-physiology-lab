@@ -50,9 +50,11 @@ const Workshop = () => {
     <div className="mt-8">
   <a
     href="https://nkdbreath.com"
-    className="text-base text-white/60 hover:text-white transition-colors duration-200"
+    className="text-base text-white/60 hover:text-white hover:opacity-100 transition-all duration-200"
   >
-    Not sure yet? Start with your breathing <span className="text-white/80">blueprint</span> →
+    Not sure yet? Start with your breathing <span className="text-white/80 group-hover:text-white">
+  blueprint →
+</span> 
   </a>
 </div>
       </div>
