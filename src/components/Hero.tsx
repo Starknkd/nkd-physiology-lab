@@ -10,7 +10,7 @@ const Hero = () => {
     >
       {/* Left column: text content */}
      <div className="flex flex-col justify-end md:justify-center w-full md:w-1/2 z-10">
-  <div className="w-full max-w-6xl mx-auto px-5 md:px-8 lg:px-10">
+  <div className="w-full max-w-6xl mx-auto px-5 md:px-10 lg:pl-16 lg:pr-10">
     <div className="max-w-lg">
           <img
             src="/Final_V2_WHT.png"
