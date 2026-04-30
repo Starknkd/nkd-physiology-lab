@@ -4,13 +4,56 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
+      className="relative w-full min-h-screen overflow-hidden flex flex-col"
       style={{ backgroundColor: "#130730" }}
       aria-label="Hero"
     >
-      {/* Left column: text content */}
-      <div className="flex flex-col justify-end md:justify-center w-full z-10">
-        <div className="w-full max-w-6xl mx-auto px-5 md:px-10 lg:px-20 py-10 md:py-0">
+      {/* MOBILE IMAGE — stacks above text on mobile only */}
+      <div className="relative w-full h-[460px] md:hidden flex-shrink-0">
+        <img
+          src={HERO_IMG}
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover pointer-events-none"
+          style={{ objectPosition: "65% center" }}
+          loading="eager"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+          }}
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 pointer-events-none h-20"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(19,7,48,0) 0%, rgba(19,7,48,0.5) 60%, rgba(19,7,48,1) 100%)",
+          }}
+        />
+      </div>
+
+      {/* DESKTOP IMAGE — absolute, bleeds to right edge, independent of text */}
+      <img
+        src={HERO_IMG}
+        alt=""
+        aria-hidden="true"
+        className="hidden md:block absolute top-0 right-0 h-full w-[50vw] object-cover pointer-events-none"
+        style={{ objectPosition: "65% center" }}
+        loading="eager"
+        onError={(e) => {
+          (e.currentTarget as HTMLImageElement).style.display = "none";
+        }}
+      />
+      {/* Desktop image edge fades */}
+      <div
+        className="hidden md:block absolute top-0 right-0 h-full w-[50vw] pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.18) 28%, rgba(19,7,48,0) 55%), linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
+        }}
+      />
+
+      {/* TEXT — uses shared container system */}
+      <div className="relative z-10 flex-1 flex items-center w-full py-10 md:py-24">
+        <div className="w-full max-w-6xl mx-auto px-5 md:px-10 lg:px-20">
           <div className="max-w-xl">
             <img
               src="/Final_V2_WHT.png"
@@ -40,7 +83,6 @@ const Hero = () => {
               <a href="#book" className="btn-primary w-full sm:w-auto">
                 Reserve my slot →
               </a>
-
               <a
                 href="#workshop"
                 className="text-sm uppercase tracking-[0.12em] text-white/80 hover:text-white border-b border-white/40 hover:border-white pb-1 w-full sm:w-auto"
@@ -50,52 +92,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Right column: image — full width on mobile, 50% on desktop */}
-      <div className="relative w-full h-[460px] md:w-1/2 md:h-auto flex-shrink-0">
-        <img
-          src={HERO_IMG}
-          alt=""
-          aria-hidden="true"
-          className="w-full h-full object-cover pointer-events-none"
-          style={{ objectPosition: "65% center" }}
-          loading="eager"
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).style.display = "none";
-          }}
-        />
-        {/* Desktop edge blends: left + right soft fade into Ink */}
-        <div
-          className="hidden md:block absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(19,7,48,1) 0%, rgba(19,7,48,0.18) 28%, rgba(19,7,48,0) 55%), linear-gradient(to left, rgba(19,7,48,0.35) 0%, rgba(19,7,48,0) 18%)",
-          }}
-        />
-        {/* Mobile left fade only (very minimal, edge only) */}
-        <div
-          className="md:hidden absolute inset-0 pointer-events-none"
-          style={{
-            background: "linear-gradient(to right, rgba(19,7,48,0.45) 0%, rgba(19,7,48,0.08) 14%, rgba(19,7,48,0) 28%)",
-          }}
-        />
-
-        {/* Bottom fade — mobile (edge only, does not obscure subject) */}
-        <div
-          className="absolute inset-x-0 bottom-0 pointer-events-none h-20 md:hidden"
-          style={{
-            background: "linear-gradient(to bottom, rgba(19,7,48,0) 0%, rgba(19,7,48,0.5) 60%, rgba(19,7,48,1) 100%)",
-          }}
-        />
-
-        {/* Bottom fade — desktop (smooth, gradual) */}
-        <div
-          className="hidden md:block absolute inset-x-0 bottom-0 h-full pointer-events-none"
-          style={{
-            background: "linear-gradient(to bottom, rgba(19,7,48,0) 72%, rgba(19,7,48,0.4) 88%, rgba(19,7,48,1) 100%)",
-          }}
-        />
       </div>
     </section>
   );

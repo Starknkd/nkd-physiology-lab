@@ -30,7 +30,7 @@ const AICoach = () => {
 
   return (
     <section id="coach" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <p className="label-eyebrow mb-8">AI Coach — Coming soon</p>
         <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-10 md:mb-14">
           Ask the lab.<br />

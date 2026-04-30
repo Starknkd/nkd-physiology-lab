@@ -7,7 +7,7 @@ const Workshop = () => {
 
   return (
     <section id="workshop" className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <p className="label-eyebrow mb-12">Calm Under Pressure — Workshop</p>
 
         <p className="label-eyebrow mb-6 md:mb-8 text-white/80">Train with Anna — Human Performance Specialist</p>

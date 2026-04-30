@@ -12,8 +12,7 @@ const Science = () => {
       id="science"
       className="texture-bg py-24 md:py-36 px-5 md:px-10 lg:px-20 relative min-h-[820px]"
     >
-      <div className="max-w-7xl mx-auto relative">
-        
+      <div className="max-w-6xl mx-auto relative">
         {/* TEXT */}
         <div className="max-w-xl relative z-10 pr-12 md:pr-24 lg:pr-32">
           <p className="label-eyebrow mb-8">The science</p>
