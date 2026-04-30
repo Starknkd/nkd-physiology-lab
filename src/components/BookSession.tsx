@@ -23,19 +23,19 @@ const BookSession = () => {
             </div>
 
             {/* FORM */}
-<div className="w-full max-w-xl mx-auto mt-10 md:mt-12">
-  <iframe
-    data-tally-src="https://tally.so/r/aQjka2"
-    loading="lazy"
-    width="100%"
-    height="600"
-    frameBorder="0"
-    marginHeight={0}
-    marginWidth={0}
-    title="NKD Lab Booking"
-    className="w-full rounded-lg"
-  ></iframe>
-</div>
+            <div className="w-full max-w-xl mx-auto mt-10 md:mt-12">
+              <iframe
+                src="https://tally.so/embed/aQjka2"
+                loading="lazy"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                title="NKD Lab Booking"
+                className="w-full rounded-lg"
+              ></iframe>
+            </div>
           </div>
 
           {/* RIGHT COLUMN */}
