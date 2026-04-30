@@ -16,7 +16,7 @@ const BookSession = () => {
       />
 
       {/* TEXT — shared container system */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto md:mr-auto md:ml-0 px-5 md:px-10 lg:px-20">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-5 md:px-10 lg:px-20">
         <div className="max-w-xl">
           <p className="label-eyebrow mb-8">Book your session</p>
 

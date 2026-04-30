@@ -53,7 +53,7 @@ const Hero = () => {
 
       {/* TEXT — uses shared container system */}
       <div className="relative z-10 flex-1 flex items-center w-full py-10 md:py-24">
-        <div className="w-full max-w-6xl mx-auto md:mr-auto md:ml-0 px-5 md:px-10 lg:px-20">
+        <div className="w-full max-w-6xl mx-auto px-5 md:px-10 lg:px-20">
           <div className="max-w-xl">
             <img
               src="/Final_V2_WHT.png"
