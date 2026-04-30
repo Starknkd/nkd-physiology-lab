@@ -32,8 +32,13 @@ const Workshop = () => {
         </ul>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:items-center mt-4">
-          <a href="#book" className="btn-primary w-full sm:w-auto">
-            Join the workshop →
+          <a
+            href="#"
+            data-tally-open="A76N4W"
+            className="btn-primary w-full sm:w-auto"
+            onClick={(e) => e.preventDefault()}
+          >
+            Secure my place →
           </a>
           <a
             href="#book"
