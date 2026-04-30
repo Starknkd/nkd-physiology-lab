@@ -9,8 +9,9 @@ const Hero = () => {
       aria-label="Hero"
     >
       {/* Left column: text content */}
-      <div className="flex flex-col justify-end md:justify-center px-5 md:px-8 lg:px-10 pb-12 md:pb-20 pt-10 md:pt-0 z-10 w-full md:w-1/2">
-        <div className="w-full max-w-lg">
+     <div className="flex flex-col justify-end md:justify-center w-full md:w-1/2 z-10">
+  <div className="w-full max-w-6xl mx-auto px-5 md:px-8 lg:px-10">
+    <div className="max-w-lg">
           <img
             src="/Final_V2_WHT.png"
             alt="STARKNKD"
@@ -19,7 +20,9 @@ const Hero = () => {
               (e.currentTarget as HTMLImageElement).style.display = "none";
             }}
           />
-
+    </div>
+  </div>
+</div>
           <p className="label-eyebrow mb-6 md:mb-8">NKD Breathing Lab — Central London</p>
 
           <h1 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
