@@ -42,7 +42,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="#weekly"
+                href="#workshop"
                 className="text-sm uppercase tracking-[0.12em] text-white/80 hover:text-white border-b border-white/40 hover:border-white pb-1 w-full sm:w-auto"
               >
                 Want a weekly practice instead? →
