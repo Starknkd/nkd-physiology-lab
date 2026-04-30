@@ -4,7 +4,7 @@ const BookSession = () => {
       <div className="grid md:grid-cols-2 gap-8 md:gap-0 items-stretch">
         {/* LEFT COLUMN — constrained inside container */}
         <div className="px-5 md:px-10 lg:px-20">
-          <div className="max-w-6xl mx-auto md:ml-auto md:mr-0 w-full">
+          <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-20">
             <div className="max-w-xl flex flex-col h-full justify-between">
               <div>
                 <p className="label-eyebrow mb-8">Book your session</p>
