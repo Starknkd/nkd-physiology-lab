@@ -36,6 +36,7 @@ const BookSession = () => {
     className="w-full rounded-lg"
   ></iframe>
 </div>
+          </div>
 
           {/* RIGHT COLUMN */}
           <div className="hidden md:block relative h-full min-h-[640px] w-full overflow-hidden">
