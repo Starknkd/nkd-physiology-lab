@@ -22,7 +22,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section id="testimonials" className="bg-ink py-24 md:py-36 px-5 md:px-10 lg:px-20 border-t border-border">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <p className="label-eyebrow mb-8">Testimonials</p>
         <h2 className="font-bold leading-[0.95] tracking-tight text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl mb-16 md:mb-24">
           Real people.<br />
