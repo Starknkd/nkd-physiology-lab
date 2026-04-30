@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-3">
               <p className="label-eyebrow mb-1">Practice</p>
-              <a href="#weekly" className="text-white/85 hover:text-sunset font-light text-sm transition-colors">
+              <a href="#workshop" className="text-white/85 hover:text-sunset font-light text-sm transition-colors">
                 Workshop
               </a>
               <a href="#coach" className="text-white/85 hover:text-sunset font-light text-sm transition-colors">
