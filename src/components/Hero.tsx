@@ -4,12 +4,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen w-full overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden"
       style={{ backgroundColor: "#130730" }}
       aria-label="Hero"
     >
-      <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-20 flex flex-col md:flex-row min-h-screen"></div>
-
       {/* Left column: text content */}
       <div className="flex flex-col justify-end md:justify-center w-full md:w-1/2 z-10">
         <div className="w-full px-5 md:px-10 lg:px-20 py-10 md:py-0">
